@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>
+    Dashboard with theme switcher
+  </title>
+
+ 
+  
+</head>
+<body class="light">
+  <div class="top light"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mt-3 mb-5">
+        <h1 class="font-weight-bold">Social Media Dashboard</h1>
+        <span class="text-secondary font-weight-bold light">Total Followers: 23,004</span>
+        
+        <span class="float-right">Dark Mode 
+          <label class="switch">
+            <input type="checkbox" name="themeToggler" checked>
+            <span class="slider round light"></span>
+          </label>
+        </span>
+      
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-deck"> 
+        <div class="card-wrapper facebook">
+          <div class="card light">
+            <div class="card-body text-center">
+              <span class="card_header"><img src="./images/icon-facebook.svg" alt="facebook"> @nathanf</span>
+              <h2 class="follower_count">1987</h2>
+              <p class="textbar">Followers</p><br>
+              <p class="positive">
+                <img src="./images/icon-up.svg" alt="up">
+                12 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-wrapper twitter">
+          <div class="card light">
+            <div class="card-body text-center">
+              <span class="card_header"><img src="./images/icon-twitter.svg" alt="twitter"> @nathanf</span>
+              <h2 class="follower_count">1044</h2>
+              <p class="textbar">Followers</p><br>
+              <p class="positive">
+                <img src="./images/icon-up.svg" alt="up">
+                99 Today
+              </p>
+            </div>
+          </div>
+        </div>
+
+      <div class="card-wrapper instagram">        
+        <div class="card light instagram" >
+          <div class="card-body text-center">
+            <span class="card_header"><img src="./images/icon-instagram.svg" alt="instagram"> @realnathanf</span>
+            <h2 class="follower_count">11k</h2>
+            <p class="textbar">Followers</p><br>
+            <p class="positive">
+              <img src="./images/icon-up.svg" alt="up">
+              1099 Today
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper youtube">       
+        <div class="card light youtube">
+          <div class="card-body text-center">
+            <span class="card_header"><img src="./images/icon-youtube.svg" alt="youtube"> Nathan F.</span>
+            <h2 class="follower_count">8239</h2>
+            <p class="textbar"> Subscribers</p><br>
+            <p class="negative">
+              <img src="./images/icon-down.svg" alt="down">
+              144 Today
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <h3 class="font-weight-bold text-secondary light">Overview - Today</h3>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card light">
+          <span class="title">Page views <img src="./images/icon-facebook.svg" alt="facebook" class="float-right"> </span>
+          <span class="flux">87<span class="float-right positive"> <img src="./images/icon-up.svg" alt=""> 3%</span></span>
+        </div>
+        
+        <div class="card light">
+          <span class="title">Likes <img src="./images/icon-facebook.svg" alt="facebook" class="float-right"> </span>
+          <span class="flux">52<span class="float-right negative"> <img src="./images/icon-down.svg" alt=""> 2%</span></span>
+        </div>
+        
+        <div class="card light">
+          <span class="title">Likes <img src="./images/icon-instagram.svg" alt="instagram" class="float-right"> </span>
+          <span class="flux">5462<span class="float-right positive"> <img src="./images/icon-up.svg" alt=""> 2257%</span></span>
+        </div>
+        
+        <div class="card light">
+          <span class="title">Profile Views <img src="./images/icon-facebook.svg" alt="facebook" class="float-right"> </span>
+          <span class="flux">52k<span class="float-right positive"> <img src="./images/icon-up.svg" alt=""> 1375%</span></span>
+        </div>
+      </div>
+      <div class="card-deck">
+        <div class="card light">
+          <span class="title">Retweets<img src="./images/icon-twitter.svg" alt="twitter" class="float-right"> </span>
+          <span class="flux">117<span class="float-right positive"> <img src="./images/icon-up.svg" alt="">303%</span></span>
+        </div>
+        
+        <div class="card light">
+          <span class="title">Likes <img src="./images/icon-twitter.svg" alt="facebook" class="float-right"> </span>
+          <span class="flux">507<span class="float-right positive"> <img src="./images/icon-up.svg" alt=""> 553%</span></span>
+        </div>
+        
+        <div class="card light">
+          <span class="title">Likes <img src="./images/icon-youtube.svg" alt="youtube" class="float-right"> </span>
+          <span class="flux">107<span class="float-right negative"> <img src="./images/icon-down.svg" alt=""> 19%</span></span>
+        </div>
+        
+        <div class="card light">
+          <span class="title">Total Views <img src="./images/icon-youtube.svg" alt="youtube" class="float-right"> </span>
+          <span class="flux">1407<span class="float-right negative"> <img src="./images/icon-down.svg" alt=""> 12%</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Made with <span style="color:red;">❤</span> by Abhishek Singh
+  </footer>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</html>

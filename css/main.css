@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.top {
+  position: absolute;
+  top: 0;
+  height: 30vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.positive {
+  color: #1db489;
+}
+
+.negative {
+  color: #dc414c;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22.68px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17.2px;
+  width: 17.2px;
+  left: 2.68px;
+  bottom: 2.68px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+input:checked + .slider {
+  background: #aeb3cb;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17.2px);
+  transform: translateX(17.2px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body.light {
+  background-color: white;
+  color: #1e202a;
+}
+
+.text-secondary.light {
+  color: #63687e;
+}
+
+.top.light {
+  background-color: #f5f7ff;
+}
+
+.slider.light:before {
+  background-color: #f5f7ff;
+}
+
+.card.light {
+  background: #f0f2fa;
+  color: #63687e;
+}
+
+.card.light h2.follower_count {
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom: 0;
+  color: #1e202a;
+}
+
+.card.light .textbar {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.card.light > .flux {
+  color: #1e202a;
+}
+
+body.dark {
+  background-color: #1e202a;
+  color: white;
+}
+
+.text-secondary.dark {
+  color: #8b97c6;
+}
+
+.top.dark {
+  background-color: #1f212e;
+}
+
+.slider.dark:before {
+  background-color: #1f212e;
+}
+
+.card.dark {
+  background: #252a41;
+  color: #8b97c6;
+}
+
+.card.dark h2.follower_count {
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.card.dark .textbar {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.card.dark > .flux {
+  color: white;
+}
+
+.card-wrapper.facebook {
+  background: #198ff5;
+}
+
+.card-wrapper.twitter {
+  background: #1ca0f2;
+}
+
+.card-wrapper.instagram {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.card-wrapper.youtube {
+  background: #c4032a;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-deck {
+  width: 100%;
+}
+
+.card-deck > .card-wrapper {
+  padding-top: 4px;
+  border-radius: 6px;
+  margin: 0 15px 20px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+}
+
+.card-deck > .card-wrapper > .card {
+  height: 100%;
+  margin: 0 0;
+}
+
+.card-deck > .card {
+  padding: 15px;
+  margin: 15px;
+}
+
+.card-deck > .card > .title {
+  font-weight: bold;
+}
+
+.card-deck > .card > .flux {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card-deck > .card > .flux span {
+  margin: 10px auto;
+  font-weight: normal;
+  font-size: 0.5em;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  position: absolute;
+  font-family: inherit;
+  padding-bottom: 5px;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+}
+/*# sourceMappingURL=main.css.map */
